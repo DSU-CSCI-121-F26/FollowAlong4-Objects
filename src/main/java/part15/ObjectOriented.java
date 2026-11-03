@@ -17,5 +17,32 @@ package part15;
 //    in THIS file AND in Car.java, saying in YOUR OWN WORDS what that line does.
 
 public class ObjectOriented {
+    public static void main(String[] args) {
+        Car myCar1 = new Car();
+        Car myCar2 = new Car();
+        System.out.println(myCar1.model);
+        System.out.println(myCar2.model);
 
+        myCar1.drive();
+        myCar1.brake();
+        System.out.println(myCar2.Make);
+    }
+
+    public static class Car {
+        String Make = "Chevrolete";
+        String model = "Corvette";
+        String year = "2023";
+        String color = "blue";
+        String price = "50000.00";
+
+        void drive() {
+            System.out.println("You drive the car");
+        }
+
+        void brake() {
+            System.out.println("You step on the brakes");
+        }
+    }
 }
+
+
