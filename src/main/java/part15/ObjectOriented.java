@@ -22,6 +22,7 @@ public class ObjectOriented {
         Car myCar1 = new Car();
         Car myCar2 = new Car();
         /* these lines outpint the models of car one
+
         and 2 both cars are corvettes so will out print Corvette twice
          */
         System.out.println(myCar1.model);
@@ -38,7 +39,7 @@ public class ObjectOriented {
         String model = "Corvette";
         String year = "2023";
         String color = "blue";
-        String price = "50000.00";
+        double price = 50000.00;
 
         void drive() {
             System.out.println("You drive the car");
