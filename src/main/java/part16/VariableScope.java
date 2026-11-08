@@ -18,6 +18,6 @@ import java.util.Random;
 
 public class VariableScope {
     public static void main(String[] args) {
-        DiceRoller diceRoller = new DiceRoller();
+        DiceRoller diceRoller = new DiceRoller(); // calls class DiceRoller
     }
 }

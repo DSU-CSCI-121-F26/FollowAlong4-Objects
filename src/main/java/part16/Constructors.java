@@ -18,11 +18,13 @@ package part16;
 
 public class Constructors {
     public static void main(String[] args) {
-
+        // these are the parameters for our humans set
         Human human1 = new Human("Rick", 65, 70);
         Human human2 = new Human("Morty", 16, 50);
+        // these print our Human's names
         System.out.println(human1.name);
         System.out.println(human2.name);
+        // attaching our humans to their acting methods
         human2.eat();
         human1.drink();
 
