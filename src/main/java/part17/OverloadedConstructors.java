@@ -16,8 +16,9 @@ package part17;
 
 public class OverloadedConstructors {
     public static void main(String[] args) {
+        // Creates a pizza using the no-argument constructor
         Pizza pizza = new Pizza();
-
+        // Prints the Pizza ingredients
         System.out.println("Here are the ingredients of your pizza: ");
         System.out.println(pizza.bread);
         System.out.println(pizza.sauce);
