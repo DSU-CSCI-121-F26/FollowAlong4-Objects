@@ -1,5 +1,5 @@
 package part16;
-
+import java.util.Random;
 // Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=11990s
 //        starts at about 3:19:50 — stop at about 3:25:04, when he says
 //        "if you would like a copy"
@@ -17,5 +17,7 @@ package part16;
 //    in THIS file AND in DiceRoller.java, saying in YOUR OWN WORDS what that line does.
 
 public class VariableScope {
-
+    public static void main(String[] args) {
+        DiceRoller diceRoller = new DiceRoller();
+    }
 }
