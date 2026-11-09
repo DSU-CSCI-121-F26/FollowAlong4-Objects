@@ -32,4 +32,8 @@ public class Pizza {
     Pizza() {
 
     }
+    @Override
+    public String toString() {
+        return "pizza with " + bread + ", " + sauce + ", " + cheese + " and " + topping;
+    }
 }
