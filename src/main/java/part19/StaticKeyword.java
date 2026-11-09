@@ -16,7 +16,10 @@ package part19;
 
 public class StaticKeyword {
     public static void main(String[] args) {
+        // Displays our starting friends count
         System.out.println(Friend.numberOfFriends);
+
+       // these create our friends
         Friend friend1 = new Friend("SpongeBob");
         System.out.println(Friend.numberOfFriends);
         Friend friend2 = new Friend("Patrick");
@@ -27,7 +30,7 @@ public class StaticKeyword {
         Friend.displayFriends();
         Friend friend4 = new Friend("Sandy");
 
-
+        // this displays our updated total
         Friend.displayFriends();
     }
 

@@ -6,9 +6,10 @@ public class Friend {
 
     Friend(String name) {
         this.name = name;
-        numberOfFriends++;
+        numberOfFriends++;// Counts each new friend
     }
     static void displayFriends() {
+        // Displays the total number of friends
         System.out.println("You have " + numberOfFriends + " friends");
     }
 }
