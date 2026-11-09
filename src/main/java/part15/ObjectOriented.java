@@ -17,5 +17,38 @@ package part15;
 //    in THIS file AND in Car.java, saying in YOUR OWN WORDS what that line does.
 
 public class ObjectOriented {
+    public static void main(String[] args) {
+       //these call object car
+        Car myCar1 = new Car();
+        Car myCar2 = new Car();
+        /* these lines outpint the models of car one
 
+        and 2 both cars are corvettes so will out print Corvette twice
+         */
+        System.out.println(myCar1.model);
+        System.out.println(myCar2.model);
+
+        myCar1.drive();// calls the drive method that belongs to car 1
+        myCar1.brake();// runs the brake method that belongs to car 1
+        System.out.println(myCar2.Make); // this out prints the Make of Car 2 being Chevrolete
+    }
+
+    public static class Car {// here this class defines the object Car
+        // here are the attributes of object car
+        String Make = "Chevrolete";
+        String model = "Corvette";
+        String year = "2023";
+        String color = "blue";
+        double price = 50000.00;
+
+        void drive() {
+            System.out.println("You drive the car");
+        }
+
+        void brake() {
+            System.out.println("You step on the brakes");
+        }
+    }
 }
+
+

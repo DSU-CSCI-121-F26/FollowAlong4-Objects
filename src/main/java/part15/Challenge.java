@@ -17,19 +17,35 @@ public class Challenge {
     // partyRating(3, 8)    should return 0
     // partyRating(20, 6)   should return 2
     public static int partyRating(int snacks, int drinks) {
-        return -1;   // YOUR CODE
+        if (snacks < 5 || drinks < 5) {
+            return 0;
+        } else if (snacks >= drinks * 2 || drinks >= snacks * 2) {// YOUR CODE
+            return 2;
+        } else {
+            return 1;
+        }
     }
 
-    // Count-off game.
-    //   divisible by 3 AND 5  -> "FizzBuzz"
-    //   divisible by 3 only   -> "Fizz"
-    //   divisible by 5 only   -> "Buzz"
-    //   anything else         -> the number as text, like "7"
-    // fizzBuzz(15)   should return "FizzBuzz"
-    // fizzBuzz(9)    should return "Fizz"
-    // fizzBuzz(7)    should return "7"
-    // Hint: n % 3 == 0 means "n divides evenly by 3". String.valueOf(7) gives "7".
-    public static String fizzBuzz(int n) {
-        return "";   // YOUR CODE
+        // Count-off game.
+        //   divisible by 3 AND 5  -> "FizzBuzz"
+        //   divisible by 3 only   -> "Fizz"
+        //   divisible by 5 only   -> "Buzz"
+        //   anything else         -> the number as text, like "7"
+        // fizzBuzz(15)   should return "FizzBuzz"
+        // fizzBuzz(9)    should return "Fizz"
+        // fizzBuzz(7)    should return "7"
+        // Hint: n % 3 == 0 means "n divides evenly by 3". String.valueOf(7) gives "7".
+        public static String fizzBuzz ( int n){
+            if (n % 3 == 0 && n % 5 == 0) {
+                return "FizzBuzz";
+            } else if (n % 3 == 0) {
+                return "Fizz";
+            } else if (n % 5 == 0) {
+                return "Buzz";
+            } else {
+                return String.valueOf(n);
+            }
+        }
     }
-}
+
+
