@@ -22,6 +22,16 @@ public class ObjectPassing {
 
         garage.park(car1);// parks the BMW
         garage.park(car2);// parks the Tesla
+
+
+        Car[] lot = {
+                new Car("Honda"),
+                new Car("Ford"),
+                new Car("Kia")};
+        for (Car car : lot) {
+            garage.park(car);
+        }
+    }
     }
 
-}
+
