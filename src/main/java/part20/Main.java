@@ -17,12 +17,12 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("=== Part 20 checkpoint ===");
-         step1();
-         step2();
-         step3();
-         step4();
-         step5();
-         step6();
+        step1();
+        step2();
+        step3();
+        step4();
+        step5();
+        step6();
     }
 
     static void header(String title) {
@@ -76,6 +76,7 @@ public class Main {
 
         System.out.println(davis);
         System.out.println(brooks);
+
     }
 
 
@@ -105,6 +106,38 @@ public class Main {
         carter.throwTo(brooks, 30);
 
         System.out.println(brooks);
+
+
     }
 
 }
+class Main2 {
+    public static void main(String[] args) {
+
+
+        Quarterback carter = new Quarterback("Carter", 40);
+        Receiver davis = new Receiver("Davis", 11);
+        Receiver slot = davis;
+        carter.throwTo(davis, 15);
+        carter.throwTo(slot, 10);
+        System.out.println(davis);
+        /* My guess
+        #11 Davis: 2 catches, 25 yards
+         */
+        int completions = 2;
+        int attempts = 3;
+        System.out.println(completions / attempts * 100);
+        System.out.println(completions * 100 / attempts);
+        System.out.println(completions * 100.0 / attempts);
+
+        System.out.println(davis.yardsPerCatch());
+        Receiver rookie = new Receiver("Lee", 3);
+        System.out.println(rookie.yardsPerCatch());
+
+        Receiver brooks = new Receiver("Brooks", 84);
+        brooks.catchBall(25);
+        System.out.println(brooks);
+        brooks.catchBall(5);
+        System.out.println(brooks);
+    }
+    }

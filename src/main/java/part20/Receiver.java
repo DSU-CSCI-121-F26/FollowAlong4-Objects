@@ -20,29 +20,45 @@ public class Receiver {
     int number;
     int catches;
     int yards;
+
     // Return's our receiver's information
     Receiver(String name, int number) {
         this.name = name;
         this.number = number;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
+
+    public double yardsPerCatch() {
+        if (catches == 0) {
+            return 0.0;
+        }
+        return (double) yards / catches;
+    }
+
     public int getNumber() {
         return number;
     }// records catches and yards
+
     public int getCatches() {
         return catches;
     }
+
     public int getYards() {
         return yards;
     } // Displays receiver's stats
+
     public void catchBall(int gain) {
         catches++;
         yards += gain;
     }
+
     public String toString() {
+        if (catches == 1) {
+            return "#" + number + " " + name + ": " + catches + " catches, " + yards + " yards";
+        }
         return "#" + number + " " + name + ": " + catches + " catches, " + yards + " yards";
     }
 }
