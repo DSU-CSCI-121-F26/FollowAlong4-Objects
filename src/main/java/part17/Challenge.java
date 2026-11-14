@@ -14,7 +14,16 @@ public class Challenge {
     //   sumSkip13({1, 13, 5, 2})  → 3     (13 and 5 are skipped)
     //   sumSkip13({})             → 0
     public static int sumSkip13(int[] nums) {
-        return 0;   // YOUR CODE
+        int sum = 0;
+
+        for (int i = 0; i < nums.length; i++){
+            if (nums[i] == 13) {
+                i++;
+            } else {
+                sum += nums[i];// YOUR CODE
+            }
+        }
+        return sum;
     }
 
     // true if two numbers NEXT TO EACH OTHER in the array are both equal to value.
@@ -22,6 +31,16 @@ public class Challenge {
     //   hasPair({2, 1, 2}, 2)  → false   (the 2s are not next to each other)
     //   hasPair({7}, 7)        → false
     public static boolean hasPair(int[] nums, int value) {
+    for (int i = 0; i < nums.length - 1; i++) {
+        if(nums[i] == value && nums[i +1] == value) {
+            return true;
+        }
+    }
         return false;   // YOUR CODE
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sumSkip13(new int[]{1,2,3,4,5,13,6,7}));
+        System.out.println(hasPair(new int[]{1,1,1,3,4,5,6,7,8,9},1));
     }
 }

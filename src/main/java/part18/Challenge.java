@@ -13,8 +13,15 @@ public class Challenge {
     //   uniqueSum(3, 2, 3)  → 2     (both 3s are left out)
     //   uniqueSum(3, 3, 3)  → 0
     public static int uniqueSum(int a, int b, int c) {
-        return 0;   // YOUR CODE
+        int sum = 0;
+
+        if (a != b && a != c) sum += a;
+        if (b != a && b != c) sum += b;
+        if (c != a && c != b) sum += c;
+
+        return sum;
     }
+
 
     // Add up a, b and c — but "teens" (13 to 19) count as 0, EXCEPT 15 and 16, which count.
     // Do NOT write the teen rule three times. Call fixTeen() on each number instead.
@@ -22,12 +29,18 @@ public class Challenge {
     //   sumWithoutTeens(2, 13, 1)    → 3
     //   sumWithoutTeens(15, 16, 17)  → 31
     public static int sumWithoutTeens(int a, int b, int c) {
-        return 0;   // YOUR CODE — use fixTeen
+        return fixTeen(a) + fixTeen(b) + fixTeen(c);
     }
 
     // The helper. Gives back 0 for 13, 14, 17, 18 and 19. Gives back n for everything else.
     //   fixTeen(13) → 0     fixTeen(15) → 15     fixTeen(20) → 20
     public static int fixTeen(int n) {
-        return 0;   // YOUR CODE
+        if (n >= 13 && n <= 19 && n != 15 && n != 16) {
+            return 0;
+        }
+
+        return n;
     }
+
+    ;
 }

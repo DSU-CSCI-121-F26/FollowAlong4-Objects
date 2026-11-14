@@ -15,5 +15,15 @@ package part17;
 //    saying in YOUR OWN WORDS what that line does. Do this in Pizza.java too.
 
 public class OverloadedConstructors {
+    public static void main(String[] args) {
+        // Creates a pizza using the no-argument constructor
+        Pizza pizza = new Pizza();
+        // Prints the Pizza ingredients
+        System.out.println("Here are the ingredients of your pizza: ");
+        System.out.println(pizza.bread);
+        System.out.println(pizza.sauce);
+        System.out.println(pizza.cheese);
+        System.out.println(pizza.topping);
+    }
 
 }
