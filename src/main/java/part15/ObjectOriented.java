@@ -18,14 +18,19 @@ package part15;
 
 public class ObjectOriented {
     public static void main(String [] args) {
-
+        // creates the first car using the starting values in the car class
         Car myCar = new Car();
+        // creates a separate second car with those same starting values
         Car myCar2 = new Car();
-
+        // gets the first car's brand and prints it
          System.out.println(myCar.make);
+        // gets the first car's model and prints it
          System.out.println(myCar.model);
+        // adds a blank line to separate the two cars' details
          System.out.println();
+        // gets the second car's brand and prints it
         System.out.println(myCar2.make);
+        // gets the second car's model and prints it
         System.out.println(myCar2.model);
 
         //myCar.drive();

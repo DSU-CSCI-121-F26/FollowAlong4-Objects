@@ -17,8 +17,9 @@ package part15;
 
 public class FinalKeyword {
     public static void main(String[] args) {
-
+        // declares an int value that can not be changed from its preset value
         final double PI = 3.14159;
+        // printing out the final value
         System.out.println(PI);
 
 
