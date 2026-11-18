@@ -18,14 +18,17 @@ package part16;
 
 public class Constructors {
     public static void main(String[] args) {
-
+        // makes rick with his own info and saves him as human1 so we can use him later
         Human human1 = new Human("Rick", 65, 70);
+        // makes morty as a separate human so he can have his own name, age, and weight
         Human human2 = new Human("Morty", 16, 50);
-
+        // prints the first human's name to check that rick got saved
         System.out.println(human1.name);
+        // prints the second human's name to check that morty has his own name
         System.out.println(human2.name);
-
+        // calls eat on human1 so the message uses rick's name
         human1.eat();
+        // calls drink on human2 so the message uses morty's name
         human2.drink();
 
     }
