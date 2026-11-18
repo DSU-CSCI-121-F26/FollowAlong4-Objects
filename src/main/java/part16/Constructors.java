@@ -26,7 +26,7 @@ public class Constructors {
         System.out.println(human1.name);
         // prints the second human's name to check that morty has his own name
         System.out.println(human2.name);
-        // calls eat on human1 so the message uses rick's name
+        // calls eat on human1 so the message uses Rick's name
         human1.eat();
         // calls drink on human2 so the message uses morty's name
         human2.drink();

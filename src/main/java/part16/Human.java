@@ -18,7 +18,7 @@ public class Human {
     }
     // lets any human print an eating message when you call this method
     void eat() {
-        // grabs this human's name so you can tell who's eating
+        // grabs this human's name so you can tell who's eating.
         System.out.println(this.name + " is eating");
     }
     // lets any human print a drinking message when you call this method
