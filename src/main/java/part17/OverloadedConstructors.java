@@ -29,6 +29,8 @@ public class OverloadedConstructors {
         // displays whatever topping was added to the pizza
         System.out.println(pizza.topping);
 
+        Pizza pizza2 = new Pizza("thick crust", "tomato", "mozzarella");
+
 
 
     }

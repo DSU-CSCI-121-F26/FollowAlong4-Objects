@@ -30,5 +30,25 @@ public class Pizza {
         this.sauce = sauce;
 
     }
+    // runs when we give the pizza bread sauce and cheese but no topping
+    Pizza(String bread, String sauce, String cheese) {
+        // saves the bread chosen for this pizza
+        this.bread = bread;
+        // keeps the sauce that was passed in
+        this.sauce = sauce;
+        // saves the cheese while the topping stays null
+        this.cheese = cheese;
+    }
+
+    // runs when we only want to give the pizza bread
+    Pizza(String bread) {
+        // saves the bread and leaves all the other ingredients null
+        this.bread = bread;
+    }
+    // lets us make a pizza without passing in any ingredients so everything stays null
+    Pizza() {
+
+    }
+
 }
 
