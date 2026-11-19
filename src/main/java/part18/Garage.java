@@ -6,4 +6,9 @@ public class Garage {
         // uses the given car's name to print that it's parked
         System.out.println("The " + car.name + " is parked in the garage");
     }
+
+    void leave(Car car) {
+        System.out.println("The " + car.name + " left the garage");
+    }
+
 }
