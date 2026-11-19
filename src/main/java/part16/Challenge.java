@@ -14,7 +14,13 @@ public class Challenge {
     // doubleLetters("Java")   should return "JJaavvaa"
     // doubleLetters("")       should return ""
     public static String doubleLetters(String s) {
-        return "";   // YOUR CODE
+        String result = "";
+
+        for (int i = 0; i < s.length(); i++) {
+            result = result + s.charAt(i) + s.charAt(i);
+        }
+
+        return result;
     }
 
     // Count how many times word appears in s. Do not count overlaps:
@@ -23,6 +29,19 @@ public class Challenge {
     // countWord("aaaa", "aa")       should return 2   (not 3)
     // countWord("hello", "bye")     should return 0
     public static int countWord(String s, String word) {
-        return -1;   // YOUR CODE
+        int count = 0;
+
+        if (word.length() == 0) {
+            return 0;
+        }
+
+        int position = s.indexOf(word);
+
+        while (position != -1) {
+            count++;
+            position = s.indexOf(word, position + word.length());
+        }
+
+        return count;
     }
 }
