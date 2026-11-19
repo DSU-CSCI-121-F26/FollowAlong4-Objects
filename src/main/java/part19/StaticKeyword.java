@@ -15,5 +15,27 @@ package part19;
 //    saying in YOUR OWN WORDS what that line does. Do this in Friend.java too.
 
 public class StaticKeyword {
+    public static void main(String[] args) {
+        // prints 0 because no friends have been created yet
+        System.out.println(Friend.numberOfFriends);
+        // creates SpongeBob and brings the shared count to 1
+        Friend friend1 = new Friend("SpongeBob");
+        // prints the shared count which is now 1
+        System.out.println(Friend.numberOfFriends);
+        // creates Patrick and brings the shared count to 2
+        Friend friend2 = new Friend("Patrick");
+        // prints the shared count which is now 2
+        System.out.println(Friend.numberOfFriends);
+        // creates Squidward and brings the shared count to 3
+        Friend friend3 = new Friend("Squidward");
+        // prints the shared count which is now 3
+        System.out.println(Friend.numberOfFriends);
+        // calls the class method to show that there are 3 friends
+        Friend.displayFriends();
+        // creates Sandy and brings the shared count to 4
+        Friend friend4 = new Friend("Sandy");
+        // calls the same method again to show the updated total of 4
+        Friend.displayFriends();
+    }
 
 }

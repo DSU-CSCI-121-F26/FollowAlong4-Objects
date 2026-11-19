@@ -11,5 +11,36 @@ package part18;
 // There is no main method here yet. Typing it is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+
+        Food[] lunch = new Food[2];
+        lunch[0] = new Food("taco");
+        System.out.println(lunch[0].name);
+        System.out.println(lunch[1]);
+        System.out.println(lunch.length);
+
+        /*
+        its gonna print taco
+        then null
+        then print 2
+         */
+        //;)
+
+        String[] fridge = {"milk", "eggs", "cheese"};
+        for (String item : fridge) {
+            System.out.println("In the fridge: " + item);
+        }
+
+        Garage garage = new Garage();
+        Car bmw = new Car("BMW");
+        garage.park(bmw);
+        garage.leave(bmw);
+
+        Car[] lot = {new Car("Honda"), new Car("Ford"), new Car("Kia")};
+        for (Car i : lot) {
+            garage.park(i);
+        }
+
+    }
 
 }

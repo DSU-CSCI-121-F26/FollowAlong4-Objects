@@ -15,5 +15,29 @@ package part18;
 //    saying in YOUR OWN WORDS what that line does. Do this in Food.java too.
 
 public class ArrayOfObjects {
+    public static void main(String[] args) {
 
+        // makes three empty spots for food objects
+        Food[] refrigerator = new Food[3];
+        // creates a food object named pizza
+        Food food1 = new Food("pizza");
+        // creates a separate food object named hamburger
+        Food food2 = new Food("hamburger");
+        // creates another food object named hot dog
+        Food food3 = new Food("hot dog");
+        // puts the pizza in the first spot at index 0
+        refrigerator[0] = food1;
+        // puts the hamburger in the second spot
+        refrigerator[1] = food2;
+        // puts the hot dog in the third spot
+        refrigerator[2] = food3;
+        // gets the first food's name and prints pizza
+        System.out.println(refrigerator[0].name);
+        // gets the second food's name and prints hamburger
+        System.out.println(refrigerator[1].name);
+        // gets the third food's name and prints hot dog
+        System.out.println(refrigerator[2].name);
+
+
+    }
 }

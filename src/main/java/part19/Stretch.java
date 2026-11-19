@@ -11,5 +11,36 @@ package part19;
 // There is no main method here yet. Typing it is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+
+        System.out.println(Friend.numberOfFriends);
+        Friend a = new Friend("Gary");
+        Friend b = new Friend("Plankton");
+        System.out.println(Friend.numberOfFriends);
+        Friend.displayFriends();
+
+         /*
+         it prints out 0 first
+         then it prints out 2
+         and does the same thing again with the method disolay friends
+          */
+
+        long rounded = Math.round(6.7);
+        double root = Math.sqrt(67);
+        int bigger = Math.max(6, 7);
+        System.out.println(rounded + " " + root + " " + bigger);
+
+        System.out.println(Stretch.square(5));
+        System.out.println(square(12));
+
+        Friend c = new Friend("Karen");
+        System.out.println("Newest friend: " + Friend.newestFriend);
+
+
+    }
+
+    static int square(int n) {
+        return n * n;
+    }
 
 }

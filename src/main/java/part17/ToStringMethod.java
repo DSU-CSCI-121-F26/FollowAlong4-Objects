@@ -15,5 +15,28 @@ package part17;
 //    saying in YOUR OWN WORDS what that line does. Do this in Car.java too.
 
 public class ToStringMethod {
+    public static void main(String[] args) {
+        // creates a new car using the information from the car class
+        Car car = new Car();
+        // prints the brand of the car
+        System.out.println(car.make);
+        // prints the model so we know what kind of car it is
+        System.out.println(car.model);
+        // shows what color the car is
+        System.out.println(car.color);
+        // displays the year the car was made
+        System.out.println(car.year);
+        // automatically uses tostring to print all the car info at once
+        System.out.println(car);
+        // directly calls tostring to show the same information again
+        System.out.println(car.toString());
 
+        Pizza pizza = new Pizza();
+        System.out.println(pizza.bread);
+        System.out.println(pizza.sauce);
+        System.out.println(pizza.cheese);
+        System.out.println(pizza.topping);
+        System.out.println(pizza.toString());
+
+    }
 }
