@@ -98,7 +98,7 @@ public class Quarterback {
         return name + ": " + completions + "/" + attempts + ", " + passingYards + " yards, " + completionPercentage() + "%";
     }
 
-    // gives us another way to throw without picking the yards
+    // gives us another way to throw without picking the yards.
     public boolean throwTo(Receiver target) {
         // uses the original method for a 10-yard pass and returns its result
         return throwTo(target, 10);

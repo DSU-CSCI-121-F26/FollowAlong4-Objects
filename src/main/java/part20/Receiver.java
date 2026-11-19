@@ -58,7 +58,7 @@ public class Receiver {
         // adds the yards gained on this catch
         yards += gain;
     }
-    // controls how the receiver looks when printed
+    // controls how the receiver looks when printed.
     public String toString() {
         // puts the jersey number, name, catches and yards in the required format
         return "#" + number + " " + name + ": " + catches + " catches, " + yards + " yards";
