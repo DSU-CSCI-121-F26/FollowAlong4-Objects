@@ -50,5 +50,10 @@ public class Pizza {
 
     }
 
+    public String toString() {
+        String myString = bread + " pizza with " + sauce + ", " + cheese + " and " + topping;
+        return myString;
+    }
+
 }
 

@@ -31,5 +31,12 @@ public class ToStringMethod {
         // directly calls tostring to show the same information again
         System.out.println(car.toString());
 
+        Pizza pizza = new Pizza();
+        System.out.println(pizza.bread);
+        System.out.println(pizza.sauce);
+        System.out.println(pizza.cheese);
+        System.out.println(pizza.topping);
+        System.out.println(pizza.toString());
+
     }
 }

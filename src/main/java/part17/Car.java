@@ -10,6 +10,16 @@ public class Car {
     // holds the year the car was made as a whole number
     int year = 2021;
 
+    Car() {
+    }
+
+    Car(String make, String model, String color, int year) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
+
     public String toString() {
         // combines all the car info and uses \n to put everything on separate lines
         String myString = make + "\n" + model + "\n" + color + "\n" + year;
