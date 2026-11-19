@@ -16,13 +16,17 @@ package part17;
 
 public class OverloadedConstructors {
     public static void main(String[] args) {
-
+        // makes a new pizza and passes in all four ingredients
         Pizza pizza = new Pizza("thick crust", "tomato", "mozzarella", "pepperoni");
-
+        // lets us know what information is about to be printed
         System.out.println("Here are the ingredients of your pizza: ");
+        // shows what type of bread the pizza was made with
         System.out.println(pizza.bread);
+        // shows what sauce was chosen for the pizza
         System.out.println(pizza.sauce);
+        // displays the cheese saved to this pizza
         System.out.println(pizza.cheese);
+        // displays whatever topping was added to the pizza
         System.out.println(pizza.topping);
 
 
