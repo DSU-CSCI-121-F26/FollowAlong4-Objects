@@ -31,26 +31,31 @@ public class Receiver {
         // saves the given jersey number in this receiver
         this.number = number;
     }
+
     // lets other classes ask for the receiver's name
     public String getName() {
         // gives back this receiver's name
         return name;
     }
+
     // lets other classes ask for the jersey number
     public int getNumber() {
         // gives back this receiver's jersey number
         return number;
     }
+
     // lets other classes check the catch total
     public int getCatches() {
         // gives back how many catches this receiver has
         return catches;
     }
+
     // lets other classes check the receiving yards
     public int getYards() {
         // gives back this receiver's total yards
         return yards;
     }
+
     // updates the receiver's stats after a catch
     public void catchBall(int gain) {
         // counts one more catch
@@ -58,6 +63,14 @@ public class Receiver {
         // adds the yards gained on this catch
         yards += gain;
     }
+
+    public double yardsPerCatch() {
+        if (catches == 0) {
+            return 0.0;
+        }
+        return (double) yards / catches;
+    }
+
     // controls how the receiver looks when printed.
     public String toString() {
         // puts the jersey number, name, catches and yards in the required format
